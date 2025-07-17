@@ -43,6 +43,8 @@ module.exports = nextConfig; // .jsだとこっちがいいらしいので, .ts�
 
 ```
 
+### 3. 
+![alt text](gitHub-actions-button.png)
 
 
 ## 参考文献
