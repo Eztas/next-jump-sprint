@@ -110,6 +110,13 @@ outフォルダを作り、GitHub Pagesが自動で生成される
 もしかしたら、説明にはなかった
 `npm run export`の未実行や`next.config`が`ts`になっているせいかも
 
+### 7. `.nojekyll`ファイル
+
+`gh-pages`ブランチがリモートリポジトリでできているが、
+`.nojekyll`ファイルはない
+
+それを直接追加すれば、cssは反映される
+
 ## 参考文献
 
 [2025-05-18, 実際に今回のデプロイで使用](https://ar-aca.tech/posts/nextjs-portfolio-deploy-github-pages/)
@@ -117,6 +124,10 @@ outフォルダを作り、GitHub Pagesが自動で生成される
 [2025-05-25, これも結局最初のデプロイのみ](https://qiita.com/kaibadash@github/items/eee0028fe7c1c85dc328)
 
 ## 画像パスが全く通らない日記
+
+`Image`コンポーネントの`src`に関して、
+src={`${basePath}/vercel.svg`}のように、
+直接パスを通すと上手くいく(らしいが、今回はpages.tsxtを無理に変えたくないので、なし)
 
 `npm run export` - 静的サイトを作るのに必要、ただ`npm run deploy`でやっているので問題ない
 
@@ -135,6 +146,16 @@ mainブランチの`out`フォルダには`.nojekyll`ファイルがある
 cssは適用された(なぜか画像はできない)
 
 ![alt text](nojekyll_css.png)
+
+
+`basePath`を`/next-jump-sprint/`にすると
+
+```
+> Build error occurred
+[Error: Specified basePath should not end with /, found "/next-jump-sprint/"]
+```
+
+というエラーになる
 
 imgタグだとsrcにbasePathを通す必要があるが、
 Next.jsのImageコンポーネントならそれは必要ないと言っているケースが多い
