@@ -17,4 +17,5 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+// export default nextConfig;
+module.exports = nextConfig;
