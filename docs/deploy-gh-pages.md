@@ -110,6 +110,8 @@ outフォルダを作り、GitHub Pagesが自動で生成される
 もしかしたら、説明にはなかった
 `npm run export`の未実行や`next.config`が`ts`になっているせいかも
 
+![alt text](setting-pages-deploy-from-a-branch.png)
+
 ### 7. `.nojekyll`ファイル
 
 `gh-pages`ブランチがリモートリポジトリでできているが、
@@ -130,6 +132,8 @@ src={`${basePath}/vercel.svg`}のように、
 直接パスを通すと上手くいく(らしいが、今回はpages.tsxtを無理に変えたくないので、なし)
 
 `npm run export` - 静的サイトを作るのに必要、ただ`npm run deploy`でやっているので問題ない
+
+`next.config.ts`を`next.config.mjs`にしても特にエラーは変わらなかった
 
 `trailingSlash: true`があっても画像は出てこなかった
 
