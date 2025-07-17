@@ -125,3 +125,10 @@ outフォルダを作り、GitHub Pagesが自動で生成される
 
 ![alt text](image-path-network.png)
 
+`gh-pages`ブランチには`.nojekyll`ファイルがないが、
+mainブランチの`out`フォルダには`.nojekyll`ファイルがある
+
+これが静的GitHub Pages立ち上げに必要なので、それを追加すると、
+cssは適用された(なぜか画像はできない)
+
+![alt text](nojekyll_css.png)
