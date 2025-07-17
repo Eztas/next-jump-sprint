@@ -128,7 +128,16 @@ outフォルダを作り、GitHub Pagesが自動で生成される
 `gh-pages`ブランチには`.nojekyll`ファイルがないが、
 mainブランチの`out`フォルダには`.nojekyll`ファイルがある
 
+(`.nojekyll`ファイルは一度`gh-pages`ブランチで作成すると、デプロイしても消えない)
+
 これが静的GitHub Pages立ち上げに必要なので、それを追加すると、
 cssは適用された(なぜか画像はできない)
 
 ![alt text](nojekyll_css.png)
+
+imgタグだとsrcにbasePathを通す必要があるが、
+Next.jsのImageコンポーネントならそれは必要ないと言っているケースが多い
+
+↓
+
+gh-pagesライブラリでのデプロイだと上手くいかない？
