@@ -43,8 +43,12 @@ module.exports = nextConfig; // .jsだとこっちがいいらしいので, .ts�
 
 ```
 
-### 3. 
+### 3. GitHub Actionsを選択
 ![alt text](gitHub-actions-button.png)
+
+![alt text](gitHub-actions-next-js.png)
+
+### 4. nextjs.ymlの修正
 
 
 ## 参考文献
