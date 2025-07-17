@@ -48,8 +48,23 @@ module.exports = nextConfig; // .jsだとこっちがいいらしいので, .ts�
 
 ![alt text](gitHub-actions-next-js.png)
 
+![alt text](setting-pages-github-actions.png)
+
 ### 4. nextjs.ymlの修正
 
+必要かと思ったが、nodeのバージョンが20で同じ
+
+next exportに関する項目がなくて消さなくていい
+
+### 5. デプロイ
+
+ymlファイルができた時点で、デプロイ
+
+これ以降`main`ブランチにプッシュされるだけで自動デプロイ
+
+![alt text](deploy_result.png)
+
+ただ、このデプロイでも結局画像のパスは通らないらしい
 
 ## 参考文献
 
