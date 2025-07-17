@@ -64,7 +64,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
             src={`${basePath}/file.svg`}
             alt="File icon"
