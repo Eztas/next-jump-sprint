@@ -114,3 +114,14 @@ outフォルダを作り、GitHub Pagesが自動で生成される
 [2025-05-18, 実際に今回のデプロイで使用](https://ar-aca.tech/posts/nextjs-portfolio-deploy-github-pages/)
 
 [2025-05-25, これも結局最初のデプロイのみ](https://qiita.com/kaibadash@github/items/eee0028fe7c1c85dc328)
+
+## 画像パスが全く通らない日記
+
+`npm run export` - 静的サイトを作るのに必要、ただ`npm run deploy`でやっているので問題ない
+
+`trailingSlash: true`があっても画像は出てこなかった
+
+実際パスは本来通しているが、GitHub Pages上では通っていないことが分かる
+
+![alt text](image-path-network.png)
+
