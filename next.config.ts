@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
   output: 'export',
     // 本番環境のみリポジトリ名をパスのプレフィックスとして設定
   basePath: process.env.NODE_ENV === 'production' ? `/${repoName}` : '',
+
+  // GitHub Pagesでは画像最適化が機能しないため無効にする
+  images: {
+    unoptimized: true,
+  },
 };
 
 // export default nextConfig;
