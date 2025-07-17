@@ -76,10 +76,11 @@ export default nextConfig;
 "scripts": {
   "dev": "next dev --turbopack",
   "build": "next build",
-  "export": "next export",
   "deploy": "npm run build && echo > out/.nojekyll && gh-pages -d out"
 }
 ```
+
+もう今は`"export": "next export",`をNext.jsではやっていないらしいので、これは不要
 
 ### 4. gh-pagesライブラリのインストール
 
