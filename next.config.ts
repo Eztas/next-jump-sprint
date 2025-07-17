@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repoName = 'next-jump-sprint'; // 自身のGitHubリポジトリ名に変更してください
+const repoName = '/next-jump-sprint'; // 自身のGitHubリポジトリ名に変更してください
 
 /* 本番環境と開発環境の分岐用のフラグ */
 const isProd = process.env.NODE_ENV == "production"
