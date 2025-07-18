@@ -72,7 +72,7 @@ export default function Home() {
         >
           <img
             aria-hidden
-            src="/windows.svg"
+            src="/window.svg"
             alt="Window icon"
             width={16}
             height={16}
