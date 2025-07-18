@@ -66,6 +66,17 @@ ymlファイルができた時点で、デプロイ
 
 ただ、このデプロイでも結局画像のパスは通らないらしい
 
+## パス通らない日記
+
+next/imageのインポートをなくすと、
+`img`タグでsvgが表示できるようになった
+
+`img`タグを使っていたときもあったが、next/imageのインポートをしている時は表示されていなかったので、`img`タグを使うだけでなく、next/imageに関する項目の削除が必要
+
+ただ直接`/next-jump-sprint/vercel.svg`と直接書いたものは表示できたが、`next.config.ts`の`basePath`ではパスが通らない
+
+![alt text](only-img-direct-path.png)
+
 ## 参考文献
 
 https://qiita.com/unreadabread/items/920420c24fc49cb3b392
