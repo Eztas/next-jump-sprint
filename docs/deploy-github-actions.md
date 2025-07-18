@@ -77,6 +77,10 @@ next/imageのインポートをなくすと、
 
 ![alt text](only-img-direct-path.png)
 
+`next.config.ts`を`next.config.js`にしたら画像のパス全てが通った
+
+確かGitHub Pagesもtsxなどを全てHTML, CSS, JSに変化してのことだったはずなので、config周りをtsにすると上手くいかないのかも(configは変換できない？)
+
 ## 参考文献
 
 https://qiita.com/unreadabread/items/920420c24fc49cb3b392
