@@ -79,6 +79,8 @@ next/imageのインポートをなくすと、
 
 `next.config.ts`を`next.config.js`にしたら画像のパス全てが通った
 
+->前のデプロイ(page.tsxでパスを通していた時)のキャッシュが残っていただけの可能性
+
 確かGitHub Pagesもtsxなどを全てHTML, CSS, JSに変化してのことだったはずなので、config周りをtsにすると上手くいかないのかも(configは変換できない？)
 
 ## 参考文献
