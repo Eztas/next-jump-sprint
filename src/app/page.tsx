@@ -1,4 +1,3 @@
-import Image from "next/image";
 import getConfig from "next/config";
 
 const { publicRuntimeConfig } = getConfig();
@@ -10,13 +9,12 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
+        <img
           className="dark:invert"
           src={`${basePath}/next.svg`}
           alt="Next.js logo"
           width={180}
           height={38}
-          priority
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
@@ -38,7 +36,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               className="dark:invert"
               src="/next-jump-sprint/vercel.svg"
               alt="Vercel logomark"
@@ -79,7 +77,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
             src={`${basePath}/window.svg`}
             alt="Window icon"
@@ -94,7 +92,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
             src={`${basePath}/globe.svg`}
             alt="Globe icon"
