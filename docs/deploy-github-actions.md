@@ -147,6 +147,15 @@ ymlファイルができた時点で、デプロイ
 
 ただ、このデプロイでも結局画像のパスは通らないらしい
 
+### 7. デプロイ(mainブランチ以外のデプロイ)
+
+Settings -> Environments -> github-pages
+を選択して、
+以下の写真の"Add deployment branch or tag rule"
+を選択し、デプロイしたいブランチを追加
+
+![alt text](deploy_rule.png)
+
 ## パス通らない日記
 
 next/imageのインポートをなくすと、
