@@ -38,7 +38,7 @@ export default function Home() {
           >
             <img
               className="dark:invert"
-              src="/next-jump-sprint/vercel.svg"
+              src={`${basePath}/vercel.svg`}
               alt="Vercel logomark"
               width={20}
               height={20}
