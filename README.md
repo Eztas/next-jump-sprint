@@ -1,3 +1,12 @@
+# next-jump-sprint
+
+## 各ブランチの説明
+- `main`ブランチ - GitHub Actionsと`nextjs.yml`を使ったデプロイまでの機能を実装, ここからならソースコード開発のみを行えばよい, 開発が本格化すれば基本ここには何もプッシュしない(予定)
+
+- `gh-pages`ブランチ - Next.jsの`gh-pages`ライブラリでデプロイしたものを残す(ymlバージョンと違って画像のパスは通っていないので注意)
+
+- `develop`ブランチ - ここで開発内容を統合させ、GitHub Actionsと`nextjs.yml`を使ったデプロイも行う, 基本的に使うブランチ
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
