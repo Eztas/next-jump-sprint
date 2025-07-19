@@ -9,9 +9,9 @@ https://eztas.github.io/next-jump-sprint/
 
 - `develop`ブランチ - ここで開発内容を統合させ、GitHub Actionsと`nextjs.yml`を使ったデプロイも行う, 基本的に使うブランチ
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 First, run the development server:
 
