@@ -1,6 +1,12 @@
+import Link from 'next/link';
+
 const Quiz = () => {
     return (
-        <div>Quiz</div>
+        <div>
+            <div>Quiz</div>
+            <Link href="/">ホーム</Link>
+        </div>
+
     )
 }
 
