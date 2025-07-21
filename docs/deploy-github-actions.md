@@ -156,6 +156,26 @@ Settings -> Environments -> github-pages
 
 ![alt text](deploy_rule.png)
 
+## その他パス関連
+
+### next/Link
+
+AppRouter(フォルダ名がURLに入り、それがパスになる)も可能
+
+別にbasePathを通さなくてもパスは通るので、画面遷移もできる
+
+`<Link href="/quiz">クイズへ</Link>`
+
+で、
+
+https://eztas.github.io/next-jump-sprint/quiz
+
+quizフォルダのpage画面へ移る
+
+(`Image`みたいに、https://eztas.github.io/quiz とはならず、サブディレクトリのパスも通してくれる)
+
+これが`assetPrefix`のおかげなのかは不明(未検証)
+
 ## パス通らない日記
 
 next/imageのインポートをなくすと、
