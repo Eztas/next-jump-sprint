@@ -1,4 +1,5 @@
 import getConfig from "next/config";
+import Link from 'next/link';
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -28,6 +29,8 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
+
+        <Link href="/quiz">クイズへ</Link>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
