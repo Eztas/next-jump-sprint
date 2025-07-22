@@ -32,6 +32,23 @@ Reactに関する要素ならほぼ使えるようになる
 
 `children: React.ReactNode`とすると、`children(=<div>Hello</div>など)`が`React.ReactNode`型を持つのではなく、`{ children: <div>Hello</div> }`というキー配列全体が`React.ReactNode`型ということになり、型エラーが実行時に生じるので注意
 
+## layoutの修正
+
+元々プロジェクト作成時にある`layout.tsx`の修正を行う
+
+```
+import { Providers } from '@/providers/providers';
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Providers>
+          {children}
+        </Providers>
+      </body>
+```
+
+これで、各pageに関するレイアウトにchakraUIが反映されるようになる
+
 ## 参考文献
 
 https://qiita.com/mayu_AJ/items/99b8b9781eac36a6a5af
