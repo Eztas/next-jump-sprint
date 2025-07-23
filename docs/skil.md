@@ -1,5 +1,7 @@
 # Chakra UI
 
+2023年のブログで見られた意見がもとではあるが、App Routerとは少し相性が悪いらしいので注意
+
 ## インストール(Next.js用)
 
 `npm i @chakra-ui/react@2 @chakra-ui/next-js @emotion/react @emotion/styled framer-motion
