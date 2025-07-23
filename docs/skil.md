@@ -49,6 +49,26 @@ import { Providers } from '@/providers/providers';
 
 これで、各pageに関するレイアウトにchakraUIが反映されるようになる
 
+## use client
+
+'use client'が必要なのは、Chakra UIのProviderがReactのContextやStateといった、ブラウザ（クライアントサイド）でしか動かない機能に依存しているからだ。
+
+Next.jsのApp Routerでは、コンポーネントはデフォルトでServer Componentsとして動作する。これらはサーバー側でのみレンダリングされるため、useState（状態管理）やuseEffect（ライフサイクルエフェクト）、Context（状態の伝達）といったインタラクティブな機能を使うことができない。
+
+実際、HTMLがserver componentであるために、クライアントで動くProviderがあり、エラーになっている
+
+![alt text](use_client_error.png)
+
+ただ、今回GitHub Pagesデプロイにあたり
+
+`PublicRuntimeConfig`を使っていてそれが競合するため、
+
+![alt text](chakra_config_error.png)
+
+Providerのみで適用(issueのエラーはあるがそれでも動いてはいる)
+
+ブログ系では、各`page.tsx`で適用される事例が多い
+
 ## 参考文献
 
 https://qiita.com/mayu_AJ/items/99b8b9781eac36a6a5af
