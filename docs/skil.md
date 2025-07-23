@@ -67,7 +67,8 @@ Next.jsのApp Routerでは、コンポーネントはデフォルトでServer Co
 
 Providerのみで適用(issueのエラーはあるがそれでも動いてはいる)
 
-ブログ系では、各`page.tsx`で適用される事例が多い
+ブログ系では、各`page.tsx`で適用される事例が多いが、
+[use clientなしでもいい事例もある](https://zenn.dev/collabostyle/articles/8e8d76d5611f7e)
 
 ## 参考文献
 
