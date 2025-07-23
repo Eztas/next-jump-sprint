@@ -70,6 +70,9 @@ Providerのみで適用(issueのエラーはあるがそれでも動いてはい
 ブログ系では、各`page.tsx`で適用される事例が多いが、
 [use clientなしでもいい事例もある](https://zenn.dev/collabostyle/articles/8e8d76d5611f7e)
 
+GitHub Pages上では`providers.tsx`のみに`use client`を置いて、
+`page.tsx`には`use client`を置かなくても、左下にissueのエラーすら出なかった
+
 ## 参考文献
 
 https://qiita.com/mayu_AJ/items/99b8b9781eac36a6a5af
