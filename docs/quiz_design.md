@@ -10,15 +10,20 @@ Next.jsのApp Routerを活かし、UIをコンポーネント単位で分割し�
 ```
 src/
 └── app/
+    ├── page.tsx                # 最初の画面ページ
+    ├── layout.tsx              # レイアウト
     └── quiz/
         ├── page.tsx            # クイズ全体の管理・状態を持つページ
-        ├── questions.ts        # (既存) 問題データ
-        ├── quiz.ts             # (既存) 型定義
-        ├── quiz-logic.ts       # ★(新規) クイズのロジックをまとめるファイル
-        └── components/         # ★(新規) クイズ用UIコンポーネントを置くディレクトリ
-            ├── QuizCard.tsx        # 問題表示と選択肢を担当するコンポーネント
-            ├── Explanation.tsx     # 解説を表示するコンポーネント
-            └── QuizResult.tsx      # 最終結果を表示するコンポーネント
+        ├── questions.ts        # 問題データ
+        ├── quiz-logic.ts       # クイズのロジックをまとめるファイル
+        └── _components/        # クイズ専用コンポーネントディレクトリ
+            ├── QuizCard.tsx        # 問題表示と選択肢コンポーネント
+            ├── Explanation.tsx     # 解説表示コンポーネント
+            └── QuizResult.tsx      # 最終結果+解説表示コンポーネント
+└── context/
+    ├── quizContext.tsx     # その時用いたクイズ情報をコンテキスト化
+└── types/
+    ├── quiz.ts             # 型定義
 ```
 
 ## 3. 各ファイルの役割
@@ -53,7 +58,7 @@ src/
 -   **役割**:
     -   `page.tsx` から `Quiz` オブジェクトをpropsとして受け取る。
     -   問題文 (`statement`) を表示する。
-    -   選択肢 (`selections`) をボタンとして一覧表示する。
+    -   選択肢 (`selections`) をラジオボタンとして一覧表示する。
     -   ユーザーが選択肢ボタンをクリックしたら、その回答を `page.tsx` に通知する。
 
 ### `components/Explanation.tsx` (解説のUI)
